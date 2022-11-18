@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" class="open-button button" id="open-btn">Заполните форму</button>
+
+      <div class="backdrop" id="modal">
+        <div class="modal">
+          <h3 class="modal__title">Бесплатная консультация</h3>
+          <p class="modal__subtitle">
+            Оставьте заявку и наши специалисты свяжутся с Вами в ближайшее время
+          </p>
+
+          <form class="modal__form" id="modal-form">
+            <label for="modal__input-username" class="modal__upper-input-text">Ваше имя *</label>
+            <input
+              type="text"
+              class="modal__input"
+              id="modal__input-username"
+              required
+              placeholder="Имя"
+            />
+
+            <label for="modal__input-tel" class="modal__upper-input-text"
+              >Ваш номер телефона *</label
+            >
+            <input
+              type="tel"
+              class="modal__input"
+              id="modal__input-tel"
+              required
+              placeholder="+___ (__) ___ __ __"
+            />
+
+            <button type="submit" class="button submit-button" id="submit-btn">Отправить</button>
+            <button type="button" class="close-button" id="close-btn">Закрыть</button>
+          </form>
+        </div>
+
+        <div class="aftermodal">
+            
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
